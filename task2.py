@@ -7,3 +7,11 @@
 # Вывод:
 # значение:3 индексы 2 и 3
 # значение:2 индексы 4 и 5
+from random import randint
+N = int(input())
+a = [randint(0,5) for i in range(N)]
+print(a)
+for i in range(0, N-1):
+    if a[i] == a[i+1]:
+        print('значения:', a[i], "индекс:", i, i+1)
+
