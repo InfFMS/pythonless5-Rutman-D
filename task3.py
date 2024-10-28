@@ -11,7 +11,15 @@ from random import randint
 N = int(input())
 a = [randint(0,100) for i in range(N)]
 print(a)
+b = []
+c = []
 for i in range(len(a)):
     for j in range(len(a)):
+        c[i] = i
         if a[i] == a[j] and i != j:
+            b[j] = j
+            for k in range(len(b)):
+                if b[k] == c[i]:
+                    continue
             print("значения:", a[i], "индекс:", i, j)
+
