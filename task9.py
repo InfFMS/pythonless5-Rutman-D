@@ -5,6 +5,8 @@
 # После удаления дублей:  [10, 20, 30, 40, 50]
 from random import randint
 N = int(input())
+
+
 r = [randint(0,5) for i in range(N)]
 print(r)
 a = [r[0]]
@@ -18,4 +20,5 @@ for i in range(1, len(r)):
             a.append(r[i])
 
 print(a)
+
 
