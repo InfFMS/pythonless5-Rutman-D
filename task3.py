@@ -7,3 +7,16 @@
 # [1, 2, 3, 2, 5, 10]
 # Вывод:
 # значение:2 индексы 1 и 3
+from random import randint
+N = int(input())
+a = [randint(0,100) for i in range(N)]
+print(a)
+b = []
+s = 
+s += 1
+for i in range(len(a)):
+    for j in range(len(a))
+        if a[i] == a[j] and i != j :
+            print("значения:", a[i], "индекс:", i, j)
+            b.append(a[i])
+            s = 0
